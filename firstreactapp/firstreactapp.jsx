@@ -1,19 +1,19 @@
 
 var TodoApp = React.createClass({
 	getInitialState: function(){
-  return {thingsTodo: ['TODO 1', 'TODO 2']};
+  return {items: ['TODO 1', 'TODO 2']};
   },
-  updateThingsTodo: function(newItem){
+  updateItems: function(newItem){
   		var allItems=this.state.items.concat([newItem]);
-		this.setState({thingsTodo: allItems});
+		this.setState({items: allItems});
   },
   
   render: function(){
   	return (
       <div>
     	 <TodoHeader />
-        <TodoList thingsTodo = {this.state.thingsTodo} />
-        <TodoForm onFormSubmit={this.updateThingsTodo}/>
+        <TodoList items = {this.state.items} />
+        <TodoForm onFormSubmit={this.updateItems}/>
       </div>
     );
   }
@@ -34,12 +34,12 @@ var TodoForm = React.createClass({
 	handleSubmit: function(e){
   	e.preventDefault();
   	this.props.onFormSubmit(this.state.item)
-    this.setState({input: ''});
+    this.setState({item: ''});
     return;
   },
    	onChange: function(e){
     	this.setState({
-      	input: e.target.value
+      	item: e.target.value
       });
     },
   
@@ -55,12 +55,12 @@ var TodoForm = React.createClass({
 
 var TodoList = React.createClass({
 	render: function(){
-  	var createInput = function(inputText){
+  	var createItem = function(itemText){
     	return(
-      	<TodoListItem>{inputText}</TodoListItem>
+      	<TodoListItem>{itemText}</TodoListItem>
       );
     };
-    return <ul>{this.props.items.map(createInput)}</ul>;
+    return <ul>{this.props.items.map(createItem)}</ul>;
   }
 });
 
