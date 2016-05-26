@@ -1,1 +1,49 @@
-style.css
+input[type=text] {
+
+    width: 100%;
+    padding: 2% 3%;
+    margin: 1% 0;
+    display: inline-block;
+    border: 1% solid #ccc;
+    border-radius: 1%;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+	font: 130% Helvetica, Verdana, sans-serif;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 2% 3%;
+    margin: 1% 0;
+    border: 1% solid #ccc;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 1%;
+  padding: 1%;
+}
+ 
+li {
+	text-align: center;
+  font: 130% Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+    padding: 1%;
+    margin: 1%;
+}
+ 
+li:last-child {
+  border: none;
+}
+
+h2 { color: #111; 
+	font-family: 'Helvetica Neue', sans-serif;
+	 font-size: 250%;
+	  font-weight: bold;
+	   letter-spacing: -2%;
+	    line-height: 2;
+	     text-align: center;
+	      }
