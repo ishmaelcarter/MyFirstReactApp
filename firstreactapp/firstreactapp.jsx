@@ -1,7 +1,7 @@
 
 var TodoApp = React.createClass({
 	getInitialState: function(){
-  return {items: ['TODO 1', 'TODO 2', 'TODO 3'], completedItems: ['DID 1', 'DID 2', 'DID 3']};
+  return {items: ['TODO 1', 'TODO 2', 'TODO 3'], completedItems: ['DID']};
   },
 
   removeItem: function(currItem) {
@@ -9,8 +9,8 @@ var TodoApp = React.createClass({
     
     var idx = this.state.items.indexOf(currItem);
     var newItems = this.state.items.slice();
-    var completed = newItems.splice(idx, 1);
-    this.setState({items: newItems}, completedItems: completedItems.concat(completed));
+    newItems.splice(idx, 1);
+    this.setState({items: newItems});
     /*
     var idx = this.state.items.indexOf(currItem);
     this.state.items.splice(idx, 1);
@@ -29,7 +29,6 @@ var TodoApp = React.createClass({
     	 <TodoHeader />
         <TodoList items={this.state.items} onClick={this.removeItem} />
         <TodoForm onFormSubmit={this.updateItems}/>
-        <TodoCompleted>
       </div>
     );
   }
