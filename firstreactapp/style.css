@@ -1,3 +1,8 @@
+#todo {
+  width: 40%;
+}
+
+
 input[type=text] {
 
     width: 100%;
@@ -40,7 +45,7 @@ li:last-child {
 }
 
 h2 { color: #111; 
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: 'Indie Flower', cursive;
 	 font-size: 250%;
 	  font-weight: bold;
 	   letter-spacing: -2%;
