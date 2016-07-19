@@ -1,7 +1,7 @@
 
 var TodoApp = React.createClass({
 	getInitialState: function(){
-  return {items: ['no', 'TODO 2', 'TODO 3'], completedItems: ['DID']};
+  return {user: ['Ishmael Carter'], items: ['no', 'TODO 2', 'TODO 3'], completedItems: ['DID']};
   },
 
   removeItem: function(currItem) {
@@ -34,10 +34,23 @@ var TodoApp = React.createClass({
   }
 })
 
+var TopHeader = React.createClass({
+  render: function(){
+    return(
+      <div>
+      <h1 className="TopHeader">Nice!</h1>
+      <p className="user">{this.state.user}</p>
+      </div>
+      )
+  }
+})
+
 var TodoHeader = React.createClass({
 	render: function(){
-  	return(
-    	<h2 class="TodoHeader">Nice!</h2>
+  	return(<div>
+      <img href
+    	<h2 className="TodoHeader">Post Something Nice</h2>
+      </div>
     );
   }
 });
@@ -62,9 +75,9 @@ var TodoForm = React.createClass({
   
   render: function(){
   	return(
-    	<form class='TodoForm' onSubmit={this.handleSubmit}>
-      	<input type='text' ref='item' onChange={this.onChange} value={this.state.item} class="FormBox"/> 
-        <input class='FormButton' type='submit' value='Add' /> 
+    	<form className='TodoForm' onSubmit={this.handleSubmit}>
+      	<input type='text' ref='item' onChange={this.onChange} value={this.state.item} className="FormBox"/> 
+        <input className='FormButton' type='submit' value='Add' /> 
        </form>
     )
   }
@@ -86,7 +99,7 @@ var TodoList = React.createClass({
     }.bind(this);
 
     return (
-      <ul class="TodoList">{this.props.items.map(createItem)}</ul>
+      <ul className="TodoList">{this.props.items.map(createItem)}</ul>
     );
   }
 });

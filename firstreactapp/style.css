@@ -2,9 +2,27 @@
   width: 40%;
 }
 
+.TopHeader {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 400%;
+}
+
+.JColeUserPhoto{
+  height: 250px;
+  position: relative;
+  left: 35%;
+}
+.user{
+  font-family: 'Poppins', sans-serif;
+  font-size: 80%;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 3%;
+}
 
 input[type=text] {
-
     width: 100%;
     padding: 2% 3%;
     margin: 1% 0;
@@ -15,8 +33,10 @@ input[type=text] {
 }
 
 input[type=submit] {
-	font: 130% Helvetica, Verdana, sans-serif;
-    width: 100%;
+	font-family: 'Dosis', sans-serif;
+    position: relative;
+    left: 35%;
+    width: 30%;
     background-color: #4CAF50;
     color: white;
     padding: 2% 3%;
@@ -34,21 +54,26 @@ ul {
  
 li {
 	text-align: center;
-  font: 130% Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid #ccc;
-    padding: 1%;
-    margin: 1%;
+  font-family: 'Dosis', sans-serif;
+  border: 1px solid #ccc;
+    padding: 2%;
+    margin: 2%;
 }
  
+/** 
 li:last-child {
   border: none;
 }
+**/
 
-h2 { color: #111; 
-	font-family: 'Indie Flower', cursive;
-	 font-size: 250%;
-	  font-weight: bold;
-	   letter-spacing: -2%;
-	    line-height: 2;
-	     text-align: center;
-	      }
+h2 { 
+  color: #111; 
+	font-family: 'Dosis', sans-serif;
+  font-size: 200%;
+	letter-spacing: -2%;
+  line-height: 2;
+  text-align: center;
+  padding: 3%;
+}
+
+
