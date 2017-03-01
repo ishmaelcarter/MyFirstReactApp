@@ -1,0 +1,79 @@
+#todo {
+  width: 75%;
+}
+
+.TopHeader {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 400%;
+}
+
+.UserPhoto{
+  height: 15%;
+  position: relative;
+  left: 30%;
+}
+.user{
+  font-family: 'Poppins', sans-serif;
+  font-size: 80%;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 2% 3%;
+    margin: 1% 0;
+    display: inline-block;
+    border: 1% solid #ccc;
+    border-radius: 1%;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+	font-family: 'Dosis', sans-serif;
+    position: relative;
+    left: 35%;
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 2% 3%;
+    margin: 1% 0;
+    border: 1% solid #ccc;
+    border-radius: 1%;
+    cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 1%;
+  padding: 1%;
+}
+ 
+li {
+	text-align: center;
+  font-family: 'Dosis', sans-serif;
+  border: 1px solid #ccc;
+    padding: 2%;
+    margin: 2%;
+}
+ 
+/** 
+li:last-child {
+  border: none;
+}
+**/
+
+h2 { 
+  color: #111; 
+	font-family: 'Dosis', sans-serif;
+  font-size: 200%;
+	letter-spacing: -2%;
+  line-height: 2;
+  text-align: center;
+  padding: 3%;
+}
+
+
