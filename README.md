@@ -1,2 +1,3 @@
 # MyFirstReactApp
-very low quality todo app built in react
+In progress To Do App
+Must open in Firefox as Chrome and IE do not allow Cross Origin Requests
